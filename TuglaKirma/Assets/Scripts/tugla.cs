@@ -8,7 +8,7 @@ public class tugla : MonoBehaviour
     public AudioClip sesEfektiTuglaKirilma;
     public AudioClip sesEfektiTuglaCarpma;
     public static int toplamTuglaSayisi;
-    public Sprite[] tuglaSprite; //array(Sprite[])--> bir deðiþken içinde birden fazla deðiþkeni tutmak için kullanýlýr.
+    public Sprite[] tuglaSprite; 
     private int maxCarpmaSayisi;
     private int carpmaSayisi;
     private Puan puanScripti;
@@ -42,7 +42,7 @@ public class tugla : MonoBehaviour
                 }
                 Vector3 pos = collision.contacts[0].point; 
                 GameObject go = Instantiate(kirilmaEfekti, pos, Quaternion.identity) as GameObject;
-                Color tuglaRengi = GetComponent<SpriteRenderer> ().color; //bu scriptin baðlý olduðu tuðlanýn spriterenderý
+                Color tuglaRengi = GetComponent<SpriteRenderer> ().color; 
                 go.GetComponent<ParticleSystemRenderer> ().material.color = tuglaRengi;
                 Destroy(go, 1f);
                 AudioSource.PlayClipAtPoint(sesEfektiTuglaKirilma, transform.position);
