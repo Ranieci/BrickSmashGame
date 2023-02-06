@@ -21,8 +21,8 @@ public class DuvarSes : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         AudioSource.PlayClipAtPoint(sesEfekti, transform.position);
-        Vector3 pos = collision.contacts [0].point; //ilk çarpýþma noktasýný belirlemek için.
+        Vector3 pos = collision.contacts [0].point; 
         GameObject go=Instantiate(carpma,pos, Quaternion.identity) as GameObject;
-        Destroy(go, 1f); //1 saniye sonra objeyi ortadan kaldýr.
+        Destroy(go, 1f); 
     }
 }
