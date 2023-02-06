@@ -8,7 +8,7 @@ public class top : MonoBehaviour
     private bool oyunBasladi = false;
     void Start()
     {
-        pedal = GameObject.FindObjectOfType<pedal>().gameObject; //FindObjectOfType => baðlý olan scripte göre arama yapar.
+        pedal = GameObject.FindObjectOfType<pedal>().gameObject; 
     }
 
     
