@@ -10,7 +10,7 @@ public class arkaplanmuzik : MonoBehaviour
     {
         if (!SahnedeMuzikVar) 
         { 
-            GameObject.DontDestroyOnLoad(this.gameObject); //dontdestroyonload->diðer sahneye geçerken, yüklenirken bu objeyi objeyi yok etme
+            GameObject.DontDestroyOnLoad(this.gameObject); 
             SahnedeMuzikVar = true;
         }
         else
