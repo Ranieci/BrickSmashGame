@@ -19,6 +19,6 @@ public class OyunKontrol : MonoBehaviour
 
     public void BirSonrakiSahne()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);//þuanki bulunan index sahne numarasýna bir ekleyip bir sonraki sahneyi çalýþtýrmýþ olacak
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
